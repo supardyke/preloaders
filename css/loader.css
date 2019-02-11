@@ -27,10 +27,8 @@ FIrst Loader
     margin-top: 50px;
     border-radius: 2px;
     -webkit-animation: load 2s infinite;
-    -moz-animation: load 2s infinite;
     animation: load 2s infinite;
     -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
@@ -251,7 +249,6 @@ Loader2 Animation
       width: 100%;
     }
 }
-
 
 /*============
 Loader 3 Animation
