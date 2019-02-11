@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background: #000;
 
 }
 
@@ -13,11 +14,13 @@ body {
     position: fixed;
     top: 0;
 }
+
+
 /*===========
 FIrst Loader
 =========*/
 
-#loader1 {
+.loader-container #loader1 {
     height: 3px;
     background: #00FFFF;
     width: 0;
@@ -31,11 +34,13 @@ FIrst Loader
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
+
+
 /*=========
 Second loader2
 ===========*/
 
-#loader2 div{
+.loader-container #loader2 div{
   width: 0;
   height: 3px;
   position: absolute;
@@ -43,56 +48,58 @@ Second loader2
   left: 50%;
   -webkit-animation: radial 7s infinite linear;
 }
-#loader2{
+.loader-container #loader2{
   position: relative;
   margin-top:  50px;
   padding: 0;
 }
-#loader2 .c-1{
+.loader-container #loader2 .c-1{
   z-index: 2;
   background-color: red;
   -webkit-animation-delay: -2s;
 }
-#loader2 .c-2{
+.loader-container #loader2.c-2{
   z-index: 1;
   background-color: green;
   -webkit-animation-delay: -1s;
 }
-#loader2 .c-3{
+.loader-container #loader2 .c-3{
   z-index: 0;
   background-color: blue;
 }
-#loader2 .c-4{
+.loader-container #loader2 .c-4{
   z-index: 0;
   background-color: orange;
    -webkit-animation-delay: 1s;
 }
-#loader2 .c-5{
+.loader-container #loader2.c-5{
   z-index: 0;
   background-color: pink;
    -webkit-animation-delay: 2s;
 }
-#loader2 .c-6{
+.loader-container #loader2 .c-6{
   z-index: 0;
   background-color: brown;
    -webkit-animation-delay: 3s;
 }
-#loader2 .c-7{
+.loader-container #loader2 .c-7{
   z-index: 0;
   background-color: purple;
    -webkit-animation-delay: 4s;
 }
 
-#loader2 .c8 {
+.loader-container #loader2.c8 {
   z-index: 0;
   background-color: firebrick;
    -webkit-animation-delay: 5s;
 }
+
+
 /*============
 Third loader
 ============*/
 
-#loader3 div{
+.loader-container #loader3 div{
   width: ;
   height: 3px;
   position: absolute;
@@ -100,51 +107,53 @@ Third loader
     margin-top:  50px;
   -webkit-animation: straight 7s infinite linear;
 }
-#loader3{
+.loader-container #loader3 {
   position: relative;
   margin-top:  50px;
   padding: 0;
 }
-#loader3 .c-1{
+.loader-container #loader3 .c-1{
   z-index: 2;
   background-color: red;
   -webkit-animation-delay: -2s;
 }
-#loader3 .c-2{
+.loader-container #loader3  .c-2{
   z-index: 1;
   background-color: green;
   -webkit-animation-delay: -1s;
 }
-#loader3 .c-3{
+.loader-container #loader3  .c-3{
   z-index: 0;
   background-color: blue;
 }
-#loader3 .c-4{
+.loader-container #loader3  .c-4{
   z-index: 0;
   background-color: orange;
    -webkit-animation-delay: 1s;
 }
-#loader3 .c-5{
+.loader-container #loader3  .c-5{
   z-index: 0;
   background-color: pink;
    -webkit-animation-delay: 2s;
 }
-#loader3 .c-6{
+.loader-container #loader3  .c-6{
   z-index: 0;
   background-color: brown;
    -webkit-animation-delay: 3s;
 }
-#loader3 .c-7{
+.loader-container #loader3  .c-7{
   z-index: 0;
   background-color: purple;
    -webkit-animation-delay: 4s;
 }
 
-#loader3 .c8 {
+.loader-container #loader3  .c8 {
   z-index: 0;
   background-color: firebrick;
    -webkit-animation-delay: 5s;
 }
+
+
 /*========
 Loader1 Animation
  ======= */
@@ -203,6 +212,8 @@ Loader1 Animation
 
     }
 }
+
+
 /*=========
 Loader2 Animation
  ======= */
@@ -240,6 +251,8 @@ Loader2 Animation
       width: 100%;
     }
 }
+
+
 /*============
 Loader 3 Animation
 ===============*/
