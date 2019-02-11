@@ -1,0 +1,272 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.loader-container {
+    width: 100%;
+    height: 3px;
+    background: inherit;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+/*===========
+FIrst Loader
+=========*/
+
+#loader1 {
+    height: 3px;
+    background: #00FFFF;
+    width: 0;
+    margin-top: 50px;
+    border-radius: 2px;
+    -webkit-animation: load 2s infinite;
+    -moz-animation: load 2s infinite;
+    animation: load 2s infinite;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+/*=========
+Second loader2
+===========*/
+
+#loader2 div{
+  width: 0;
+  height: 3px;
+  position: absolute;
+  display: inline;
+  left: 50%;
+  -webkit-animation: radial 7s infinite linear;
+}
+#loader2{
+  position: relative;
+  margin-top:  50px;
+  padding: 0;
+}
+#loader2 .c-1{
+  z-index: 2;
+  background-color: red;
+  -webkit-animation-delay: -2s;
+}
+#loader2 .c-2{
+  z-index: 1;
+  background-color: green;
+  -webkit-animation-delay: -1s;
+}
+#loader2 .c-3{
+  z-index: 0;
+  background-color: blue;
+}
+#loader2 .c-4{
+  z-index: 0;
+  background-color: orange;
+   -webkit-animation-delay: 1s;
+}
+#loader2 .c-5{
+  z-index: 0;
+  background-color: pink;
+   -webkit-animation-delay: 2s;
+}
+#loader2 .c-6{
+  z-index: 0;
+  background-color: brown;
+   -webkit-animation-delay: 3s;
+}
+#loader2 .c-7{
+  z-index: 0;
+  background-color: purple;
+   -webkit-animation-delay: 4s;
+}
+
+#loader2 .c8 {
+  z-index: 0;
+  background-color: firebrick;
+   -webkit-animation-delay: 5s;
+}
+/*============
+Third loader
+============*/
+
+#loader3 div{
+  width: ;
+  height: 3px;
+  position: absolute;
+  display: inline;
+    margin-top:  50px;
+  -webkit-animation: straight 7s infinite linear;
+}
+#loader3{
+  position: relative;
+  margin-top:  50px;
+  padding: 0;
+}
+#loader3 .c-1{
+  z-index: 2;
+  background-color: red;
+  -webkit-animation-delay: -2s;
+}
+#loader3 .c-2{
+  z-index: 1;
+  background-color: green;
+  -webkit-animation-delay: -1s;
+}
+#loader3 .c-3{
+  z-index: 0;
+  background-color: blue;
+}
+#loader3 .c-4{
+  z-index: 0;
+  background-color: orange;
+   -webkit-animation-delay: 1s;
+}
+#loader3 .c-5{
+  z-index: 0;
+  background-color: pink;
+   -webkit-animation-delay: 2s;
+}
+#loader3 .c-6{
+  z-index: 0;
+  background-color: brown;
+   -webkit-animation-delay: 3s;
+}
+#loader3 .c-7{
+  z-index: 0;
+  background-color: purple;
+   -webkit-animation-delay: 4s;
+}
+
+#loader3 .c8 {
+  z-index: 0;
+  background-color: firebrick;
+   -webkit-animation-delay: 5s;
+}
+/*========
+Loader1 Animation
+ ======= */
+@-webkit-keyframes load {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 16%;
+    }
+
+    55% {
+        width: 43%
+    }
+
+    69% {
+        width: 68%;
+    }
+
+    80% {
+        width: 75%;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 16%;
+    }
+
+    55% {
+        width: 43%
+    }
+
+    69% {
+        width: 68%;
+    }
+
+    80% {
+        width: 75%;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+/*=========
+Loader2 Animation
+ ======= */
+
+@-webkit-keyframes radial{
+  from {
+    left: 50%; 
+    width: 0;
+    z-index:100;
+  }
+    25% {
+      left: 0; 
+      width: 100%;
+      z-index: 10;
+    }
+    to {
+      left: 0; 
+      width: 100%;
+    }
+}
+
+@keyframes radial{
+  from {
+    left: 50%; 
+    width: 0;
+    z-index:100;
+  }
+    25% {
+      left: 0; 
+      width: 100%;
+      z-index: 10;
+    }
+    to {
+      left: 0; 
+      width: 100%;
+    }
+}
+/*============
+Loader 3 Animation
+===============*/
+@-webkit-keyframes straight{
+  from {
+    width: 0;
+    z-index:100;
+  }
+    25% {
+      width: 100%;
+      z-index: 10;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+@keyframes  straight{
+  from {
+    width: 0;
+    z-index:100;
+  }
+    25% {
+      width: 100%;
+      z-index: 10;
+    }
+    to {
+      width: 100%;
+    }
+}
